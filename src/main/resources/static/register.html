@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File Upload</title>
+</head>
+<body>
+<br/>
+
+<p><a href="/upload/getUser.json?userId=123&userName=李泽洋">get user</a></p>
+<hr/>
+
+<p>普通表单项</p>
+
+<form action="/upload/register.json" method="post">
+    姓名：
+    <input name="username" type="text"><br/>
+    年龄:
+    <input name="age" type="text"><br/>
+    密码:
+    <input name="passwd" type="password"><br/>
+
+    <input type="submit" value="提交"/>
+</form>
+
+<hr/>
+
+
+<p>handle by MultipartFile</p>
+
+<form action="/upload/upload1.json" method="post" enctype="multipart/form-data">
+    姓名：
+    <input name="username" type="text"><br/>
+    年龄:
+    <input name="age" type="text"><br/>
+    密码:
+    <input name="passwd" type="password"><br/>
+    头像:
+    <input name="logo" type="file"><br/>
+    学历证明:
+    <input name="certification" type="file"><br/>
+
+    <input type="submit" value="提交"/>
+</form>
+
+<hr/>
+
+<p>handle by MultipartHttpServletRequest</p>
+
+<form action="/upload/upload2.json" method="post" enctype="multipart/form-data">
+    姓名：
+    <input name="username" type="text"><br/>
+    年龄:
+    <input name="age" type="text"><br/>
+    密码:
+    <input name="passwd" type="password"><br/>
+    头像:
+    <input name="logo" type="file"><br/>
+    学历证明:
+    <input name="certification" type="file"><br/>
+
+    <input type="submit" value="提交"/>
+</form>
+
+<hr/>
+
+
+<p>handle by RequestParam</p>
+
+<form action="/upload/upload3.json" method="post" enctype="multipart/form-data">
+    姓名：
+    <input name="username" type="text"><br/>
+    年龄:
+    <input name="age" type="text"><br/>
+    密码:
+    <input name="passwd" type="password"><br/>
+    头像:
+    <input name="logo" type="file"><br/>
+    学历证明:
+    <input name="certification" type="file"><br/>
+
+    <input type="submit" value="提交"/>
+</form>
+
+<hr/>
+
+
+<p>handle by ModelAttribute</p>
+
+<form action="/upload/upload4.json" method="post" enctype="multipart/form-data">
+    姓名：
+    <input name="username" type="text"><br/>
+    年龄:
+    <input name="age" type="text"><br/>
+    密码:
+    <input name="passwd" type="password"><br/>
+    头像:
+    <input name="logo" type="file"><br/>
+    学历证明:
+    <input name="certification" type="file"><br/>
+
+    <input type="submit" value="提交"/>
+</form>
+
+<hr/>
+
+<p>handle by RequestBody</p>
+
+<form action="/upload/upload5.json" method="post" enctype="multipart/form-data">
+    姓名：
+    <input name="username" type="text"><br/>
+    年龄:
+    <input name="age" type="text"><br/>
+    密码:
+    <input name="passwd" type="password"><br/>
+    头像:
+    <input name="logo" type="file"><br/>
+    学历证明:
+    <input name="certification" type="file"><br/>
+
+    <input type="submit" value="提交"/>
+</form>
+
+<hr/>
+
+<p>handle by MultipartFile[] 多文件</p>
+
+<form action="/upload/upload5.json" method="post" enctype="multipart/form-data">
+    姓名：
+    <input name="username" type="text"><br/>
+    年龄:
+    <input name="age" type="text"><br/>
+    密码:
+    <input name="passwd" type="password"><br/>
+    头像:
+    <input name="logo" type="file"><br/>
+    学历证明:
+    <input name="certification" type="file"><br/>
+
+    <input type="submit" value="提交"/>
+</form>
+
+<hr/>
+
+
+
+</body>
+</html>
